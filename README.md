@@ -1,5 +1,17 @@
 # Dream Developer Desk
 
+## Dream Desk – 3D Room & Studio Environment
+
+Dream Desk – 3D Room & Studio Environment is a C++ and OpenGL-based 3D scene that demonstrates procedural scene construction, object transformations, material properties, texture mapping, GLSL shading, and lighting techniques.
+
+The environment features a detailed workspace, dual monitors, RGB mechanical keyboard, decorative furniture, a Kazakhstan flag, and Alatau mountain artwork. Procedural texture generation tools are also included.
+
+### Ernar Sadenov – 3D Scene & Environment Implementation
+
+`SceneFactory` provides shared scene-node helpers and describes the mesh and texture resources available to the scene builders. `RoomFactory` builds the room shell, wall decor, shelves, rug, and plants; `DeskFactory` builds the desk, monitors, keyboard, mouse, chair, and articulated desk lamp; and `StudioFactory` adds the surrounding furniture and studio props. `RoomLayout.hpp` centralizes room bounds used by the room geometry and camera. `Scene.cpp` assembles these modules into the existing scene graph.
+
+The scene demonstrates hierarchical translations, rotations, and scaling; indexed primitive geometry; texture coordinates and material shininess; emissive materials; and GLSL Blinn–Phong lighting. The basic vertex shader transforms positions and inverse-transpose normals and prepares light-space coordinates. The fragment shader combines textured albedo, ambient, diffuse and specular terms, attenuation, and a 3×3 percentage-closer shadow lookup. RGB-pass nodes animate keyboard and lighting accents in the existing render pipeline. The two C++17 generator tools create the woven rug and floor textures, plus fabric, mountain artwork, and monitor graphics through procedural pixel, shape, and text drawing.
+
 An interactive C++17 / OpenGL 3.3 Core developer studio for the Computer Graphics
 Fundamentals final project. The room includes a dual-monitor desk, RGB keyboard,
 PC, sofa, bookcase, lamps, Kazakhstan flag and woven rug. A second camera renders
