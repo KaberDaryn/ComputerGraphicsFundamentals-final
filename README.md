@@ -6,7 +6,7 @@ Dream Desk – 3D Room & Studio Environment is a C++ and OpenGL-based 3D scene t
 
 The environment features a detailed workspace, dual monitors, RGB mechanical keyboard, decorative furniture, a Kazakhstan flag, and Alatau mountain artwork. Procedural texture generation tools are also included.
 
-### Ernar Sadenov – 3D Scene & Environment Implementation
+### 3D Scene & Environment Implementation
 
 `SceneFactory` provides shared scene-node helpers and describes the mesh and texture resources available to the scene builders. `RoomFactory` builds the room shell, wall decor, shelves, rug, and plants; `DeskFactory` builds the desk, monitors, keyboard, mouse, chair, and articulated desk lamp; and `StudioFactory` adds the surrounding furniture and studio props. `RoomLayout.hpp` centralizes room bounds used by the room geometry and camera. `Scene.cpp` assembles these modules into the existing scene graph.
 
@@ -119,7 +119,7 @@ comments and third-party libraries. Shared assets/build files do not affect this
 | --- | --- | ---: |
 | Kaber Daryn | Application, main, Camera, CPU-тесты, shadow GLSL | 702 |
 | Arthur Kopzhasarov | Mesh, Primitives, Shader, Framebuffer, ShadowMap, Lighting, PNG-helper, post/sky GLSL | 702 |
-| Ernar Sadenov | Room/Desk/Studio/SceneFactory, RoomLayout, C++-генераторы, basic GLSL | 702 |
+| 3D Scene & Environment | Room/Desk/Studio/SceneFactory, RoomLayout, C++-генераторы, basic GLSL | 702 |
 | Erkebulan Sovetov | Scene, SceneNode, WowSequence, Texture, UiPanel, RGB/screen GLSL | 702 |
 
 OpenAI ChatGPT/Codex assisted with architecture, C++/GLSL implementation,
